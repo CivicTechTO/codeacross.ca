@@ -9,6 +9,9 @@ The purpose of this website is to demo how the
 
 * [**Jekyll.**][jekyll] A static HTML website generator.
 * [**GitHub Pages.**][gh-pages] A Jekyll website-hosting service provided by GitHub.
+* [**Heroku.**][heroku] A platform for easily deploying applications.
+* [**Review Apps.**][review-apps] A Heroku feature that deploys code
+  from GitHub pull requests as a disposable app on the web.
 
 ### Requirements
 
@@ -40,3 +43,5 @@ Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before making
 <!-- Links -->
    [gh-pages]: https://help.github.com/articles/what-is-github-pages/
    [jekyll]: https://jekyllrb.com/docs/home/
+   [heroku]: https://www.heroku.com/what
+   [review-apps]: https://devcenter.heroku.com/articles/github-integration-review-apps
