@@ -8,7 +8,9 @@ appreciate it. :tada:
 Here are the quick and dirty details that you should know about how we
 work.
 
+* We share push access liberally. (Just ask!)
 * `master` branch is automatically deployed to our live website.
+* `master` branch is protected, and so can't be pushed to directly.
 * All changes are made through pull requests.
 
 ## Contributing
@@ -19,15 +21,19 @@ great improvements onto the website:
 1. **Before doing any work, open a new issue** to discuss your idea.
    This helps ensure that our visions align. We'd hate for you to do
    work that we then couldn't merge!
-2. **Fork** the project. [:information_source:][forking]
-3. **Create a "topic branch"**, describing your change. eg.
+2. Ask for push access. (We'll give it to you!)
+  * We use branch protection on `master`, so you can't push there.
+3. **Create a "topic branch"** in the main repo, describing your change. eg.
    `my-special-feature`.
 4. Make some commits.
 5. As early as you'd like, **create a "pull request"** for your branch into
    `master`.
+  * If your branch is in the main repo, you'll notice that a review app
+    will deployed with your code, and linked in the issue. This will
+    help us collaborate more smoothly.
 6. When you think your changes are ready, post a pull request comment to
    say so, and **ask for a review**.
-7. **We'll review your changes**. Then we'll either:
+7. **We'll review your changes** with the help of the Review App. Then we'll either:
   1. merge them right away, or
   2. ask you to make some changes.
     - Don't worry! This is totally no big deal! Working together to get
