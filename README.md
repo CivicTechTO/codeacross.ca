@@ -1,7 +1,7 @@
 # CodeAcross.ca
 
-The purpose of this website is to demo how the
-[codeacross.ca](codeacross.ca) website could be hosted on GitHub Pages.
+Jekyll-based website for [CodeAcross.ca](codeacross.ca), hosted on
+GitHub Pages.
 
 ## :computer: Local Development
 
