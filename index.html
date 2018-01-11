@@ -45,15 +45,23 @@
   <div class="yellow">
     <img src="assets/images/cda_map.gif" class="map">
     <section class="locations">
-        {% assign grouped_events = site.data.events | group_by: "province" %}
-        {% for event_group in grouped_events %}
-        <div id="{{event_group.name}}" class="location">
-          {% assign events = event_group.items %}
-          {% for event in events %}
-            <h2><a href="{{event.url}}" title="{{event.name}}" target="_blank"><nobr>{{event.city}}</nobr></a></h2>
-            <h3><a href="{{event.url}}" title="{{event.name}}" target="_blank">{{event.name}}</a></h3>
-          {% endfor %}
-        </div>
+      {% assign sorted_provs = site.provinces %}
+      {% assign events_sorted = site.data.events | group_by: "province" %}
+      {% for prov in sorted_provs %}
+        {% assign events_prov = events_sorted | where: "name",prov %}
+        {% assign events_prov = events_prov.first %}
+        {% unless events_prov.size > 0 %}
+          {% continue %}
+        {% else %}
+          {% assign prov_code = events_prov.name %}
+          {% assign events = events_prov.items %}
+          <div id="{{prov_code}}" class="location">
+            {% for event in events %}
+              <h2><a href="{{event.url}}" title="{{event.name}}" target="_blank"><nobr>{{event.city}}</nobr></a></h2>
+              <h3><a href="{{event.url}}" title="{{event.name}}" target="_blank">{{event.name}}</a></h3>
+            {% endfor %}
+          </div>
+        {% endunless %}
       {% endfor %}
     </section>
   </div>
