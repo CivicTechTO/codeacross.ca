@@ -245,5 +245,8 @@ a {
     background-color: #DA4167;
 }
 
+.location h2 {
+  text-transform: uppercase;
+}
 
 /* 

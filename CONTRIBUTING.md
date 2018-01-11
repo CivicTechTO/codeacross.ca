@@ -21,6 +21,8 @@ For a quick summary of technologies used, see the [README][tech-used].
 Here are the quick and dirty details that you should know about how we
 work.
 
+* For managing events, edit this file:
+  [`_data/events.yml`](_data/events.yml)
 * We share push access liberally. (Just [open an issue][new-issue] and ask!)
 * `master` branch is automatically deployed to our live website.
 * `master` branch is protected, and so can't be pushed to directly.

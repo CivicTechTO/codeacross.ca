@@ -1,0 +1,34 @@
+- name: Hackathon and Open Data Workshop
+  url: https://www.eventbrite.ca/e/march-4th-2017-hackathon-and-open-data-workshop-tickets-31777310792
+  city: Charlottetown
+  province: PE
+
+- name: Open Data Day
+  url: https://www.epl.ca/odd/
+  province: AB
+  city: Edmonton
+
+- name: Hack the City
+  city: Hamilton
+  province: 'ON'
+  url: http://hackthecity.ca
+
+- name: International Open Data Day / Journée internationale des données ouvertes
+  url: https://www.eventbrite.ca/e/international-open-data-day-journee-internationale-des-donnees-ouvertes-tickets-32441326882
+  province: 'ON'
+  city: Ottawa
+
+- name: Open Data Day
+  url: https://www.eventbrite.ca/e/open-data-day-2017-tickets-32197360171
+  city: St. Catherines
+  province: 'ON'
+
+- name: CodeAcross Toronto
+  city: Toronto
+  province: 'ON'
+  url: http://www.civictech.ca/codeacross-toronto-2017/
+
+- name: VODday - Vancouver Open Data Day Hackathon
+  url: https://www.opendatabc.ca/pages/2017-vodday-vancouver-open-data-day
+  province: BC
+  city: Vancouver
