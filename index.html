@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
 
@@ -43,44 +45,16 @@
   <div class="yellow">
     <img src="assets/images/cda_map.gif" class="map">
     <section class="locations">
-
-      <div id="BC" class="location">
-
-        <h2><a href="https://www.opendatabc.ca/pages/2017-vodday-vancouver-open-data-day" title="VODday - Vancouver Open Data Day Hackathon" target="_blank">VANCOUVER</a></h2>
-        <h3><a href="https://www.opendatabc.ca/pages/2017-vodday-vancouver-open-data-day" title="VODday - Vancouver Open Data Day Hackathon" target="_blank">VODday - Vancouver Open Data Day Hackathon</a></h3>
-      </div>
-
-
-      <div id="AB" class="location">
-
-        <h2><a href="https://www.epl.ca/odd/" title="Open Data Day" target="_blank">EDMONTON</a></h2>
-        <h3><a href="https://www.epl.ca/odd/" title="Open Data Day" target="_blank">Open Data Day</a></h3>
-      </div>
-
-
-      <div id="ON" class="location">
-
-        <h2><a href="http://hackthecity.ca" title="Hack the City" target="_blank">HAMILTON</a></h2>
-        <h3><a href="http://hackthecity.ca" title="Hack the City" target="_blank">Hack the City</a></h3>
-
-        <h2><a href="http://www.civictech.ca/codeacross-toronto-2017/" title="CodeAcross Toronto" target="_blank">TORONTO</a></h2>
-        <h3><a href="http://www.civictech.ca/codeacross-toronto-2017/" title="CodeAcross Toronto" target="_blank">CodeAcross Toronto</a></h3>
-
-        <h2><a href="https://www.eventbrite.ca/e/open-data-day-2017-tickets-32197360171" title="Open Data Day" target="_blank">ST.CATHARINES</a></h2>
-        <h3><a href="https://www.eventbrite.ca/e/open-data-day-2017-tickets-32197360171" title="Open Data Day" target="_blank">Open Data Day</a></h3>
-
-        <h2><a href="https://www.eventbrite.ca/e/international-open-data-day-journee-internationale-des-donnees-ouvertes-tickets-32441326882" title="International Open Data Day / Journée internationale des données ouvertes" target="_blank">OTTAWA</a></h2>
-        <h3><a href="https://www.eventbrite.ca/e/international-open-data-day-journee-internationale-des-donnees-ouvertes-tickets-32441326882" title="International Open Data Day / Journée internationale des données ouvertes" target="_blank">International Open Data Day / Journée internationale des données ouvertes</a></h3>
-
-      </div>
-
-
-
-      <div id="PE" class="location">
-
-        <h2><a href="https://www.eventbrite.ca/e/march-4th-2017-hackathon-and-open-data-workshop-tickets-31777310792" title="Hackathon and Open Data Workshop" target="_blank">CHARLOTTETOWN</a></h2>
-        <h3><a href="https://www.eventbrite.ca/e/march-4th-2017-hackathon-and-open-data-workshop-tickets-31777310792" title="Hackathon and Open Data Workshop" target="_blank">Hackathon and Open Data Workshop</a></h3>
-      </div>
+        {% assign grouped_events = site.data.events | group_by: "province" %}
+        {% for event_group in grouped_events %}
+        <div id="{{event_group.name}}" class="location">
+          {% assign events = event_group.items %}
+          {% for event in events %}
+            <h2><a href="{{event.url}}" title="{{event.name}}" target="_blank"><nobr>{{event.city}}</nobr></a></h2>
+            <h3><a href="{{event.url}}" title="{{event.name}}" target="_blank">{{event.name}}</a></h3>
+          {% endfor %}
+        </div>
+      {% endfor %}
     </section>
   </div>
 
