@@ -54,7 +54,7 @@
           {% continue %}
         {% else %}
           {% assign prov_code = events_prov.name %}
-          {% assign events = events_prov.items %}
+          {% assign events = events_prov.items | sort: 'city' %}
           <div id="{{prov_code}}" class="location">
             {% for event in events %}
               <h2><a href="{{event.url}}" title="{{event.name}}" target="_blank"><nobr>{{event.city}}</nobr></a></h2>
