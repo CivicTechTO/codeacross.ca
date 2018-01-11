@@ -66,7 +66,7 @@ The most accessible ways to get a change made is to reach out to us via:
   * :e-mail: Email:
     [`hi@civictech.ca`](mailto:hi@civictech.ca?subject=re%3A%20codeacross.ca%20website)
     (Make sure you mention the codeacross.ca website!)
-  * :bird: Twitter: [@CivicTechTO](twitter.com/civictechto)
+  * :bird: Twitter: [@CivicTechTO](https://twitter.com/civictechto)
 
 <!-- Links -->
    [forking]: https://guides.github.com/activities/forking/
