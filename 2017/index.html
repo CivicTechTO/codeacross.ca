@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
 
@@ -10,7 +12,7 @@
 
   <title>CodeAcross</title>
 
-  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,900' rel='stylesheet' type='text/css'>
 
   <script>
@@ -36,12 +38,12 @@
 <body>
 
   <section class="header">
-    <img src="../assets/images/codeacross-logo.svg" id="header">
+    <img src="{{ '/assets/images/codeacross-logo.svg' | relative_url }}" id="header">
     <h1>International Open Data Day / Journée internationale de données ouvertes - 2017</h1>
   </section>
 
   <div class="yellow">
-    <img src="../assets/images/cda_map.gif" class="map">
+    <img src="{{ '/assets/images/cda_map.gif' | relative_url }}" class="map">
     <section class="locations">
 
       <div id="BC" class="location">
@@ -91,7 +93,7 @@
     <p>&nbsp;</p>
     <p>This site was created by <a href="http://www.a-h-l.net/">Adrianne H Lee</a> and <a href="http://urbandigital.ca">Urban+Digital</a>.</p>
     <p>&nbsp;</p>
-    <p>2016 events: <a href="2016">codeacross.ca/2016</a>.</p>
+    <p>Previous years' events: <a href="{{ '/2016' | relative_url }}">2016</a></p>
 
   </div>
 
