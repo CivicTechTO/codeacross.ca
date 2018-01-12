@@ -249,4 +249,8 @@ a {
   text-transform: uppercase;
 }
 
+img#header {
+  margin-top: 10px;
+}
+
 /* 
