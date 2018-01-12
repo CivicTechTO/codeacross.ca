@@ -34,7 +34,8 @@ bundle exec jekyll serve
 
 ## :muscle: Contributing
 
-Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before making a pull request.
+Please make sure to read our [Contributing Guide](CONTRIBUTING.md) and
+[Code of Conduct](CONDUCT.md) before making a pull request.
 
 ## :copyright: License
 
