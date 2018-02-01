@@ -12,7 +12,7 @@
 
   <title>CodeAcross</title>
 
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,900' rel='stylesheet' type='text/css'>
 
   <script>
@@ -38,12 +38,12 @@
 <body>
 
   <section class="header">
-    <img src="assets/images/codeacross-logo.svg" id="header">
-    <h1>International Open Data Day / Journée internationale de données ouvertes - 2017</h1>
+    <img src="{{ '/assets/images/codeacross-logo.svg' | relative_url }}" id="header">
+    <h1>International Open Data Day / Journée internationale de données ouvertes - 2018</h1>
   </section>
 
   <div class="yellow">
-    <img src="assets/images/cda_map.gif" class="map">
+    <img src="{{ '/assets/images/cda_map.gif' | relative_url }}" class="map">
     <section class="locations">
       {% assign sorted_provs = site.provinces %}
       {% assign events_sorted = site.data.events | group_by: "province" %}
@@ -57,8 +57,9 @@
           {% assign events = events_prov.items | sort: 'city' %}
           <div id="{{prov_code}}" class="location">
             {% for event in events %}
-              <h2><a href="{{event.url}}" title="{{event.name}}" target="_blank"><nobr>{{event.city}}</nobr></a></h2>
-              <h3><a href="{{event.url}}" title="{{event.name}}" target="_blank">{{event.name}}</a></h3>
+              {% assign link = event.url | default: '#' %}
+              <h2><a href="{{ link }}" title="{{ event.name }}"{% unless link == '#' %} target="_blank"{% endunless %}><nobr>{{ event.city }}</nobr></a></h2>
+              <h3><a href="{{ link }}" title="{{ event.name }}"{% unless link == '#' %} target="_blank"{% endunless %}>{{ event.name }}</a></h3>
             {% endfor %}
           </div>
         {% endunless %}
@@ -67,13 +68,14 @@
   </div>
 
   <div class="description">
-    <p>On March 3-4th 2017, communities across Canada are organizing events about using open data and civic tech for positive impact. Get involved!</p>
+    <p>On March 3rd 2018, communities across Canada are organizing events about using open data and civic tech for positive impact. Get involved!</p>
     <p>For global event listings, visit <a href="http://opendataday.org">Open Data Day</a>.</p>
 
     <p>&nbsp;</p>
-    <p>This site was created by <a href="http://www.a-h-l.net/">Adrianne H Lee</a> and <a href="http://urbandigital.ca">Urban+Digital</a>.</p>
+    <p>This site was originally created by <a href="https://github.com/adriannehlee">Adrianne H Lee</a> and <a href="http://codefor.ca">Code for Canada</a>.
+    It is now maintained by <a href="https://github.com/CivicTechTO/codeacross.ca/graphs/contributors">contributors</a> from the civic tech community.</p>
     <p>&nbsp;</p>
-    <p>2016 events: <a href="2016">codeacross.ca/2016</a>.</p>
+    <p>Previous years' events: <a href="{{ '/2016' | relative_url }}">2016</a> <a href="{{ '/2017' | relative_url }}">2017</a></p>
 
   </div>
 
