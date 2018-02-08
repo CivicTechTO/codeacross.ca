@@ -23,10 +23,10 @@
   city: St. Catherines
   province: 'ON'
 
-- name: To be announced
+- name: CodeAcross Toronto
   city: Toronto
   province: 'ON'
-  url: null
+  url: https://www.eventbrite.ca/e/codeacross-toronto-2018-tickets-42848200120
 
 - name: To be announced
   url: null
