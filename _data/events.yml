@@ -23,10 +23,10 @@
   city: St. Catherines
   province: 'ON'
 
-- name: To be announced
+- name: CodeAcross Toronto
   city: Toronto
   province: 'ON'
-  url: null
+  url: http://civictech.ca/codeacross-2018/
 
 - name: To be announced
   url: null
