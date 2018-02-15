@@ -8,6 +8,11 @@
   province: AB
   city: Edmonton
 
+- name: CodeAcross YYC
+  url: https://www.eventbrite.ca/e/codeacross-a-civictechyyc-hackathon-tickets-42887965058
+  province: AB
+  city: Calgary
+
 - name: To be announced
   city: Hamilton
   province: 'ON'
