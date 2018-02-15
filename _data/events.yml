@@ -26,7 +26,7 @@
 - name: CodeAcross Toronto
   city: Toronto
   province: 'ON'
-  url: https://www.eventbrite.ca/e/codeacross-toronto-2018-tickets-42848200120
+  url: http://civictech.ca/codeacross-2018/
 
 - name: To be announced
   url: null
