@@ -1,39 +1,9 @@
-- name: To be announced
-  url: null
-  city: Charlottetown
-  province: PE
-
-- name: To be announced
-  url: null
-  province: AB
-  city: Edmonton
-
 - name: CodeAcross YYC
   url: https://www.eventbrite.ca/e/codeacross-a-civictechyyc-hackathon-tickets-42887965058
   province: AB
   city: Calgary
 
-- name: To be announced
-  city: Hamilton
-  province: 'ON'
-  url: null
-
-- name: To be announced
-  url: null
-  province: 'ON'
-  city: Ottawa
-
-- name: To be announced
-  url: null
-  city: St. Catherines
-  province: 'ON'
-
 - name: CodeAcross Toronto
   city: Toronto
   province: 'ON'
   url: https://www.eventbrite.ca/e/codeacross-toronto-2018-tickets-42848200120
-
-- name: To be announced
-  url: null
-  province: BC
-  city: Vancouver
