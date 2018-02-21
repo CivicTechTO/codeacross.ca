@@ -11,5 +11,10 @@
 - name: '#VODDay Hackathon'
   city: Vancouver
   province: BC
-
   url: https://www.meetup.com/OpenDataBC-Vancouver/events/247980407/
+
+- name: 'Journée internationale des données ouvertes'
+  city: Montréal
+  province: QC
+  url: http://jido2018.waglo.com/
+
