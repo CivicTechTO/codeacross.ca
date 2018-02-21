@@ -7,3 +7,9 @@
   city: Toronto
   province: 'ON'
   url: https://www.eventbrite.ca/e/codeacross-toronto-2018-tickets-42848200120
+
+- name: '#VODDay Hackathon'
+  city: Vancouver
+  province: BC
+
+  url: https://www.meetup.com/OpenDataBC-Vancouver/events/247980407/
