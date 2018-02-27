@@ -17,3 +17,13 @@
   city: Montréal
   province: QC
   url: http://jido2018.waglo.com/
+
+- name: 'Nova Scotia Open Data Contest'
+  city: Halifax
+  province: NS
+  url: https://www.eventbrite.ca/e/nova-scotia-open-data-contest-tickets-42905119367
+
+- name: 'International Open Data Day 2018'
+  city: Edmonton
+  province: AB
+  url: https://www.epl.ca/odd/
