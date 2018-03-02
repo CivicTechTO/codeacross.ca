@@ -1,6 +1,6 @@
 /* style reset
 
-http://meyerweb.com/eric/tools/css/reset/ 
+http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -14,8 +14,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -27,7 +27,7 @@ time, mark, audio, video {
     float: none;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -55,7 +55,7 @@ table {
 
 
 /* NOTE
-html is set to 62.5% so that all the REM measurements throughout 
+html is set to 62.5% so that all the REM measurements throughout
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
@@ -64,11 +64,11 @@ body {
   line-height: 1.6;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-weight: 400; }
-  
+
 
 /* Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-                
+
 body {
     margin: auto;
 }
@@ -84,7 +84,7 @@ body {
     width: 30rem;
 }
 
-#BC {    
+#BC {
     width: 20rem;
 }
 
@@ -104,10 +104,15 @@ body {
         width: 27rem;
 }
 
+#NS {
+        width: 27rem;
+}
+
 .locations {
     position: relative;
     max-width: 1300px;
     margin: auto;
+		text-align: right;
 }
 
 .location {
@@ -122,7 +127,7 @@ body {
 .description {
     position: relative;
     display: block;
-    padding-left: 58%;
+    padding-left: 9%;
     padding-right: 9%;
     margin-bottom: 5rem;
     margin-top: 6rem;
@@ -159,7 +164,7 @@ body {
     .map {
     top: 1rem;
     }
-    
+
     .yellow {
     padding-top: 10rem;
     }
@@ -176,19 +181,19 @@ body {
     text-align: left;
     padding-left: 2rem;
     }
-    
+
     .description {
     padding-left: 2rem;
     padding-right: 2rem;
     }
-    
+
     .map {
     width: 1000px;
     left: -35rem;
-    }    
-    
+    }
+
 }
-        
+
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -196,17 +201,17 @@ h1, h2, h3, h4, h5, h6 {
 margin-top: 0;
 margin-bottom: 2rem;}
 
-h1 { 
-    font-size: 1.8rem; 
-    line-height: 1.5; 
+h1 {
+    font-size: 1.8rem;
+    line-height: 1.5;
     font-weight: 200;
     margin-bottom: 0rem;
 }
 
-h2 { 
-    font-size: 3rem; 
-    line-height: 0; 
-    font-weight: 900; 
+h2 {
+    font-size: 3rem;
+    line-height: 0;
+    font-weight: 900;
     text-decoration: underline 1px;
 }
 
@@ -218,7 +223,7 @@ h3 {
 }
 
 
-/* smaller than phablet 
+/* smaller than phablet
 @media (max-width: 550px) {
 h1 { font-size: 5.0rem; }
 h2 { font-size: 4.2rem; }
@@ -253,4 +258,4 @@ img#header {
   margin-top: 10px;
 }
 
-/* 
+/*
