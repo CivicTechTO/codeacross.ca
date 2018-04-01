@@ -30,5 +30,5 @@
   
 - name: 'Ottawa Open Data Day 2018'
   city: Ottawa
-  province: ON
+  province: 'ON'
   url: https://www.eventbrite.ca/e/ottawa-open-data-day-2018-tickets-44614221337
