@@ -60,7 +60,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 2em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-weight: 400; }
@@ -71,6 +71,30 @@ body {
 
 body {
     margin: auto;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table td, table th {
+    padding: 2px 5px;
+}
+
+table th {
+    text-align: center;
+}
+
+table td {
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #DCDCDC;
+}
+
+tbody tr:nth-child(even) {
+  background-color: white;
 }
 
 .header {
@@ -112,7 +136,7 @@ body {
     position: relative;
     max-width: 1300px;
     margin: auto;
-		text-align: right;
+    text-align: right;
 }
 
 .location {
@@ -131,10 +155,11 @@ body {
     padding-right: 9%;
     margin-bottom: 5rem;
     margin-top: 6rem;
+    text-align: center;
 }
 
 .yellow {
-    padding-top: 25rem;
+    padding-top: 10rem;
     position: relative;
     background-color: #FFDB47;
     background: #FFDB47; /* For browsers that do not support gradients */
@@ -213,6 +238,7 @@ h2 {
     line-height: 0;
     font-weight: 900;
     text-decoration: underline 1px;
+    padding-top: 25px;
 }
 
 h3 {
@@ -220,6 +246,13 @@ h3 {
     line-height: 1;
     font-weight: 200;
     padding-bottom: 1.5rem;
+}
+
+h4 {
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    font-weight: bold;
 }
 
 
@@ -242,6 +275,10 @@ a {
     color: initial;
 }
 
+b {
+    font-weight: bold;
+}
+
 .description a:hover {
     color: #DA4167;
 }
@@ -256,6 +293,10 @@ a {
 
 img#header {
   margin-top: 10px;
+}
+
+#brief {
+    text-align: left;
 }
 
 /*

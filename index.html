@@ -39,7 +39,7 @@
 
   <section class="header">
     <img src="{{ '/assets/images/codeacross-logo.svg' | relative_url }}" id="header">
-    <h1>International Open Data Day / Journée internationale de données ouvertes - 2018</h1>
+    <h1>International Open Data Day / Journée internationale de données ouvertes - 2019</h1>
   </section>
 
   <div class="yellow">
@@ -68,10 +68,37 @@
   </div>
 
   <div class="description">
-    <p>On March 3rd 2018, communities across Canada are organizing events about using open data and civic tech for positive impact. Get involved!</p>
+    <p>On March 2nd 2019, communities across Canada are organizing events about using open data and civic tech for positive impact. Get involved!</p>
     <p>For global event listings, visit <a href="http://opendataday.org">Open Data Day</a>.</p>
     <p>&nbsp;</p>
-    <p>Previous years' events: <a href="{{ '/2016' | relative_url }}">2016</a> <a href="{{ '/2017' | relative_url }}">2017</a></p>
+    <h4>CodeAcross Toronto Details</h4>
+    <p><b>Date</b><br/>
+    Saturday, March 2 2019</p>
+    <p><b>Location</b><br/>
+    Artscape Daniels Launchpad<br/>
+    130 Queens Quay East<br/>
+    East Tower, 4th Floor<br/>
+    Toronto, Ontario M5A 0P6</p>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5774.34916073652!2d-79.36879!3d43.644536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x15a454c93cfd944b!2sArtscape+Daniels+Launchpad!5e0!3m2!1sen!2sca!4v1549506924583" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+
+    <h4>Event Brief</h4>
+    <div id="brief">
+      <p>This year’s CodeAcross will focus on building community resilience for the long-term. How do we help each other make good judgment? How do we build on what we already have? How do we move from some building solutions “for” others to “us” building solutions for ourselves?</p>
+      <p>Just as importantly, the event will be designed to reflect these questions. As a community, we wish to move away from an unnecessary focus on quick fixes and competitive prizes. Technology is not an end solution, but a means to an end. We plan for an event which can help participants of all backgrounds reach a common understanding on the human depth and breadth of our community challenges as the basis for the solutions we build.</p>
+      <p>The event will be accessible and youth-friendly. We intend for the hackathon to be a pop-up public process incubator: to seed connections for collaborators to continue building long after the event is done.</p>
+    </div>
+
+    <h4>Schedule of Events</h4>
+    <p>
+      <table>
+        <tr><th><b>Time</b></th><th><b>Session</b></th></tr>
+        {% for schedule in site.data.schedule %}
+          <tr><td>{{ schedule.time }}</td><td>{{ schedule.session }}</td></tr>
+        {% endfor %}
+      </table>
+    </p>
+    <p>&nbsp;</p>
+    <p>Previous years' events: <a href="{{ '/2016' | relative_url }}">2016</a> <a href="{{ '/2017' | relative_url }}">2017</a> <a href="{{ '/2018' | relative_url }}">2018</a></p>
     <p>&nbsp;</p>
     <p>This site was originally created by <a href="https://github.com/adriannehlee">Adrianne H Lee</a> and <a href="http://codefor.ca">Code for Canada</a>.
     It is now maintained by <a href="https://github.com/CivicTechTO/codeacross.ca/graphs/contributors">contributors</a> from the civic tech community.</p>

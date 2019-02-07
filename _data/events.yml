@@ -1,37 +1,22 @@
 # NOTE for Ontarians: quotes required for Ontario abbreviation of "ON",
 # otherwise YAML spec determines it to be boolean type "true" (ie. on/off)
 
-- name: CodeAcross YYC
-  url: https://www.eventbrite.ca/e/codeacross-a-civictechyyc-hackathon-tickets-42887965058
-  province: 'AB'
-  city: Calgary
-
 - name: CodeAcross Toronto
   city: Toronto
   province: 'ON'
-  url: https://www.eventbrite.ca/e/codeacross-toronto-2018-tickets-42848200120
+  url: https://www.eventbrite.ca/e/codeacrossto-2019-tickets-53330824933
 
-- name: '#VODDay Hackathon'
-  city: Vancouver
-  province: 'BC'
-  url: https://www.meetup.com/OpenDataBC-Vancouver/events/247980407/
+- name: Winnipeg Open Data Hackathon
+  city: Winnipeg
+  province: 'MB'
+  url: https://www.meetup.com/2019-Winnipeg-Open-Data-Hackathon/events/258525871/
 
-- name: 'Journée internationale des données ouvertes'
-  city: Montréal
-  province: 'QC'
-  url: http://jido2018.waglo.com/
-
-- name: 'Nova Scotia Open Data Contest'
-  city: Halifax
-  province: 'NS'
-  url: https://www.eventbrite.ca/e/nova-scotia-open-data-contest-tickets-42905119367
-
-- name: 'International Open Data Day 2018'
+- name: International Open Data Day
   city: Edmonton
   province: 'AB'
   url: https://www.epl.ca/odd/
-  
-- name: 'Ottawa Open Data Day 2018'
-  city: Ottawa
-  province: 'ON'
-  url: https://www.eventbrite.ca/e/ottawa-open-data-day-2018-tickets-44614221337
+
+- name: Nova Scotia Open Data Contest
+  city: Nova Scotia
+  province: 'NS'
+  url: https://www.eventbrite.ca/e/nova-scotia-open-data-contest-tickets-55411079029

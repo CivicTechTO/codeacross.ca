@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +10,7 @@
 
   <title>CodeAcross</title>
 
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="/assets/css/main.css">
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,900' rel='stylesheet' type='text/css'>
 
   <script>
@@ -38,32 +36,126 @@
 <body>
 
   <section class="header">
-    <img src="{{ '/assets/images/codeacross-logo.svg' | relative_url }}" id="header">
+    <img src="/assets/images/codeacross-logo.svg" id="header">
     <h1>International Open Data Day / Journée internationale de données ouvertes - 2018</h1>
   </section>
 
   <div class="yellow">
-    <img src="{{ '/assets/images/cda_map.gif' | relative_url }}" class="map">
+    <img src="/assets/images/cda_map.gif" class="map">
     <section class="locations">
-      {% assign sorted_provs = site.provinces %}
-      {% assign events_sorted = site.data.events | group_by: "province" %}
-      {% for prov in sorted_provs %}
-        {% assign events_prov = events_sorted | where: "name",prov %}
-        {% assign events_prov = events_prov.first %}
-        {% unless events_prov.size > 0 %}
-          {% continue %}
-        {% else %}
-          {% assign prov_code = events_prov.name %}
-          {% assign events = events_prov.items | sort: 'city' %}
-          <div id="{{prov_code}}" class="location">
-            {% for event in events %}
-              {% assign link = event.url | default: '#' %}
-              <h2><a href="{{ link }}" title="{{ event.name }}"{% unless link == '#' %} target="_blank"{% endunless %}><nobr>{{ event.city }}</nobr></a></h2>
-              <h3><a href="{{ link }}" title="{{ event.name }}"{% unless link == '#' %} target="_blank"{% endunless %}>{{ event.name }}</a></h3>
-            {% endfor %}
+      
+      
+      
+        
+        
+        
+          
+        
+        
+        
+          
+          
+          <div id="BC" class="location">
+            
+              
+              <h2><a href="https://www.meetup.com/OpenDataBC-Vancouver/events/247980407/" title="#VODDay Hackathon" target="_blank"><nobr>Vancouver</nobr></a></h2>
+              <h3><a href="https://www.meetup.com/OpenDataBC-Vancouver/events/247980407/" title="#VODDay Hackathon" target="_blank">#VODDay Hackathon</a></h3>
+            
           </div>
-        {% endunless %}
-      {% endfor %}
+        
+      
+        
+        
+        
+          
+        
+        
+        
+          
+          
+          <div id="AB" class="location">
+            
+              
+              <h2><a href="https://www.eventbrite.ca/e/codeacross-a-civictechyyc-hackathon-tickets-42887965058" title="CodeAcross YYC" target="_blank"><nobr>Calgary</nobr></a></h2>
+              <h3><a href="https://www.eventbrite.ca/e/codeacross-a-civictechyyc-hackathon-tickets-42887965058" title="CodeAcross YYC" target="_blank">CodeAcross YYC</a></h3>
+            
+              
+              <h2><a href="https://www.epl.ca/odd/" title="International Open Data Day 2018" target="_blank"><nobr>Edmonton</nobr></a></h2>
+              <h3><a href="https://www.epl.ca/odd/" title="International Open Data Day 2018" target="_blank">International Open Data Day 2018</a></h3>
+            
+          </div>
+        
+      
+        
+        
+        
+          
+        
+        
+        
+          
+        
+        
+        
+          
+        
+        
+        
+          
+          
+          <div id="ON" class="location">
+            
+              
+              <h2><a href="https://www.eventbrite.ca/e/ottawa-open-data-day-2018-tickets-44614221337" title="Ottawa Open Data Day 2018" target="_blank"><nobr>Ottawa</nobr></a></h2>
+              <h3><a href="https://www.eventbrite.ca/e/ottawa-open-data-day-2018-tickets-44614221337" title="Ottawa Open Data Day 2018" target="_blank">Ottawa Open Data Day 2018</a></h3>
+            
+              
+              <h2><a href="https://www.eventbrite.ca/e/codeacross-toronto-2018-tickets-42848200120" title="CodeAcross Toronto" target="_blank"><nobr>Toronto</nobr></a></h2>
+              <h3><a href="https://www.eventbrite.ca/e/codeacross-toronto-2018-tickets-42848200120" title="CodeAcross Toronto" target="_blank">CodeAcross Toronto</a></h3>
+            
+          </div>
+        
+      
+        
+        
+        
+          
+          
+          <div id="QC" class="location">
+            
+              
+              <h2><a href="http://jido2018.waglo.com/" title="Journée internationale des données ouvertes" target="_blank"><nobr>Montréal</nobr></a></h2>
+              <h3><a href="http://jido2018.waglo.com/" title="Journée internationale des données ouvertes" target="_blank">Journée internationale des données ouvertes</a></h3>
+            
+          </div>
+        
+      
+        
+        
+        
+          
+        
+        
+        
+          
+        
+        
+        
+          
+          
+          <div id="NS" class="location">
+            
+              
+              <h2><a href="https://www.eventbrite.ca/e/nova-scotia-open-data-contest-tickets-42905119367" title="Nova Scotia Open Data Contest" target="_blank"><nobr>Halifax</nobr></a></h2>
+              <h3><a href="https://www.eventbrite.ca/e/nova-scotia-open-data-contest-tickets-42905119367" title="Nova Scotia Open Data Contest" target="_blank">Nova Scotia Open Data Contest</a></h3>
+            
+          </div>
+        
+      
+        
+        
+        
+          
     </section>
   </div>
 
@@ -71,7 +163,7 @@
     <p>On March 3rd 2018, communities across Canada are organizing events about using open data and civic tech for positive impact. Get involved!</p>
     <p>For global event listings, visit <a href="http://opendataday.org">Open Data Day</a>.</p>
     <p>&nbsp;</p>
-    <p>Previous years' events: <a href="{{ '/2016' | relative_url }}">2016</a> <a href="{{ '/2017' | relative_url }}">2017</a></p>
+    <p>Previous years' events: <a href="/2016">2016</a> <a href="/2017">2017</a></p>
     <p>&nbsp;</p>
     <p>This site was originally created by <a href="https://github.com/adriannehlee">Adrianne H Lee</a> and <a href="http://codefor.ca">Code for Canada</a>.
     It is now maintained by <a href="https://github.com/CivicTechTO/codeacross.ca/graphs/contributors">contributors</a> from the civic tech community.</p>
