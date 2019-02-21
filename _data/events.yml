@@ -1,5 +1,5 @@
 # NOTE for Ontarians: quotes required for Ontario abbreviation of "ON",
-# otherwise YAML spec determines it to be boolean type "true" (ie. on/off)
+# otherwise YAML spec determines it to be boolean type "true" for on (ie. on/off)
 
 - name: CodeAcross Toronto
   city: Toronto
@@ -20,3 +20,8 @@
   city: Nova Scotia
   province: 'NS'
   url: https://www.eventbrite.ca/e/nova-scotia-open-data-contest-tickets-55411079029
+  
+- name: CodeAcross Calgary
+  city: Calgary
+  province: 'AB'
+  url: https://www.meetup.com/CivicTechYYC-Tech-for-Good/events/258705106/
