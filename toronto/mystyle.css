@@ -1,0 +1,230 @@
+#cover2018 {
+  background: url(http://civictech.ca/wp-content/uploads/2018/02/20170304-_MG_5500.jpg) no-repeat fixed right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 70vh;
+  color: black;
+}
+
+.code-across {
+  color: #00449E;
+}
+
+h1.codeacross-title {
+  font-size: 3.5em;
+  line-height: 1em;
+  color: white;
+}
+
+.code-across p a {
+  font-size: inherit;
+}
+
+.subtitle {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-weight: 200;
+  line-height: 1.3em;
+  font-size: 2em;
+  margin-bottom: 3em;
+}
+
+.code-across p {
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 1.4em;
+
+}
+
+.code-across h4 {
+  font-size: 1.5em;
+  color: #F6FFFE
+}
+
+#event-date {
+  background-color: #ffff00;
+  font-size: inherit;
+}
+
+#codeacross-register {
+  border-radius: 0;
+  margin-top: 1em;
+}
+
+.codeacross-header {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #F6FFFE;
+  display: inline-block;
+  margin-top: .5em;
+  margin-bottom: 1.2em;
+  margin-right: .5em;
+  margin-left: -0.4em;
+  padding: 10px;
+}
+
+.codeacross-banner {
+  background: url(http://civictech.ca/wp-content/uploads/2018/02/25530766072_fa801e6943_k.jpg) no-repeat fixed center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: auto;
+  padding: 4em;
+  color: white;
+}
+
+.challenge-box h3 {
+  background-color: #F6FFFE;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  line-height: 1.2em;
+  display:inline-block;
+}
+
+.challenge-box h5 {
+  font-style: italic;
+  display:block;
+}
+
+.challenge-box p {
+  display: none;
+}
+
+.sponsorlogo {
+  max-width: 100%;
+  display:inline-block;
+}
+
+.sponsorlogo:nth-child(3) {
+  max-width: 40%;
+}
+
+.sponsorlogo:nth-child(4) {
+  max-width: 6%;
+  padding-left:0.4em;
+}
+
+#time-and-place ul li {
+  font-size: 1.2em;
+  padding-bottom: .5em;
+  font-family: Helvetica, sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#time-and-place ul {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  #cover {
+    height: 50vh;
+  }
+
+  h1.codeacross-title {
+    font-size: 3em;
+    line-height: 1em;
+  }
+
+  .subtitle {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .codeacross-speaker {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .codeacross-banner {
+    background: none;
+    background-color:blue;
+  }
+
+  .sponsorlogo:nth-child(4) {
+    max-width: 12%;
+    padding-left:1em;
+  }
+  .sponsorlogo:nth-child(2) {
+    max-width: 60%;
+  }
+
+  #cover {
+    height: 60vh;
+  }
+
+  #time-and-place ul li {
+    line-height:1.3em;
+  }
+
+}
+
+@media (max-width: 575px) {
+  h1.codeacross-title {
+    font-size: 1em;
+  }
+
+  .code-across h4 {
+    font-size: 1em;
+  }
+
+  .codeacross-banner {
+    display:none;
+  }
+
+  .codeacross-header{
+    font-size:1em;
+  }
+
+  .code-across p {
+    font-size: 1em;
+  }
+
+  .challenge-box h3{
+    font-size:1em;
+    font-weight:bold;
+  }
+
+  .sponsorlogo{
+    max-width:60%;
+  }
+
+  .sponsorlogo:nth-child(3) {
+    max-width: 60%;
+  }
+
+  .sponsorlogo:nth-child(4) {
+    max-width:20%;
+  }
+
+  .sponsorlogo:nth-child(2) {
+    max-width: 100%;
+  }
+
+  #time-and-place ul li {
+    font-size: 1em;
+  }
+
+  #cover2018 {
+    background: none;
+    background-color:#00449E;
+  }
+}
+
+.page-wrapper {
+  padding: 40px 15px;
+  padding-top: 80px;
+}
+
+h1, h2 {
+  font-family: "Montserrat", Helvetica, san-serif;
+  font-weight: 700;
+  line-height: 35px;
+}
